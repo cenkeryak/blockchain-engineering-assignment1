@@ -5,6 +5,7 @@ __pycache__/
 
 # Local course identity and mining state. Keep the key, do not commit it.
 *.pem
+lab1_identity*.txt
 pow_progress.json
 pow_progress.json.tmp
 pow_progress_*.json
