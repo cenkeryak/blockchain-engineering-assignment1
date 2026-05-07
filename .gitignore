@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local course identity and mining state. Keep the key, do not commit it.
+*.pem
+pow_progress.json
+pow_progress.json.tmp
+pow_progress_*.json
