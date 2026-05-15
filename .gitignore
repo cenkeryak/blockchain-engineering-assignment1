@@ -1,11 +1,32 @@
-.venv/
-__pycache__/
-*.py[cod]
-.pytest_cache/
 
 # Local course identity and mining state. Keep the key, do not commit it.
 *.pem
-lab1_identity*.txt
+lab1_key*.txt
 pow_progress.json
 pow_progress.json.tmp
 pow_progress_*.json
+
+__pycache__/
+*.py[cod]
+*.so
+
+.venv/
+venv/
+env/
+.env
+
+
+lab1_key.pem
+nonce.txt
+
+.DS_Store
+
+.vscode/
+
+.pytest_cache/
+.mypy_cache/
+ruff_cache/
+
+build/
+dist/
+*.egg-info/

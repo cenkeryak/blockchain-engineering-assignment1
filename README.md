@@ -5,12 +5,11 @@ IPv8 client for Lab 1: Proof of Work over IPv8.
 ## Setup
 
 ```bash
-python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-brew install libsodium
+brew install uv libsodium
+uv sync
 ```
 
-The client stores your IPv8 identity in `lab1_identity.pem`. This file is gitignored on purpose. Keep it safe, because it is the private key for later labs.
+The client stores IPv8 identity in `lab1_key.pem`.
 
 ## Run
 
@@ -37,6 +36,25 @@ Useful variants:
 
 # Use more or fewer worker processes
 .venv/bin/python lab1_client.py --workers 8
+```
+
+## Store Your Public Key Once
+
+If you already have `lab1_key.pem` and want to store the matching public key once,
+run:
+
+```bash
+.venv/bin/python ensure_public_key.py
+```
+
+This writes the derived public key (hex) to `lab1_public_key.txt` only when the file
+does not exist yet. If the file already exists, the script verifies it matches
+private key and leaves it unchanged.
+
+You can also provide custom paths:
+
+```bash
+.venv/bin/python ensure_public_key.py --private-key lab1_key.pem --public-key my_public_key.txt
 ```
 
 ## Test

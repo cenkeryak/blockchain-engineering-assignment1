@@ -625,7 +625,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--workers", type=int, help="number of local mining worker processes")
     parser.add_argument("--start-nonce", type=int, default=0, help="starting nonce when mining from scratch")
     parser.add_argument("--progress-file", type=Path, default=Path("pow_progress.json"), help="mining checkpoint file")
-    parser.add_argument("--key-file", type=Path, default=Path("lab1_identity.pem"), help="IPv8 private key file")
+    parser.add_argument("--key-file", type=Path, default=Path("lab1_key.pem"), help="IPv8 private key file")
     parser.add_argument("--mine-only", action="store_true", help="mine/verify a nonce but do not contact IPv8")
     parser.add_argument("--community-id", default=COMMUNITY_ID_HEX, help="IPv8 community id as hex")
     parser.add_argument("--server-public-key", default=SERVER_PUBLIC_KEY_HEX, help="lab server public key as hex")
