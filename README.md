@@ -40,7 +40,7 @@ Useful variants:
 
 ## Store Your Public Key Once
 
-If you already have `lab1_key.pem` and want to store the matching public key once,
+If we already have `lab1_key.pem` and want to store the matching public key once,
 run:
 
 ```bash
