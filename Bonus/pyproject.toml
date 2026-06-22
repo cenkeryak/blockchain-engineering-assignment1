@@ -1,0 +1,17 @@
+[project]
+name = "ipv8-pow-client-bonus"
+version = "0.1.0"
+description = "Combined bonus: fork convergence after a partition + adaptive difficulty"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "cryptography<42",
+    "libnacl>=2.1.0",
+    "pyipv8>=3.2.0",
+    "pytest>=9.0.3",
+    "python-dotenv"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["test"]
